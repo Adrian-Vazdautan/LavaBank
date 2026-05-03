@@ -3,6 +3,9 @@ import { HeaderMegaMenu } from './components/Header/HeaderMegaMenu';
 import { HeroImageBackground } from './components/HeroHeader/HeroImageBackground';
 import { FeaturesCards } from './components/FeatureSection/FeaturesCards';
 import { FeaturesCardsSteps } from './components/FeatureSectionSteps/FeaturesCardsSteps';
+import { FeaturesCardsBenefits } from './components/FeatureSectionBenefits/FeaturesCardsBenefits';
+import { GetStartedSection } from './components/FeatureSectionGetStarted/GetStartedSection';
+import { FooterLinks } from './components/Footer/FooterLinks';
 import './App.css'
 
 function App() {
@@ -14,6 +17,9 @@ function App() {
       <HeroImageBackground />
       <FeaturesCards />
       <FeaturesCardsSteps />
+      <FeaturesCardsBenefits />
+      <GetStartedSection />
+      <FooterLinks />
     </>
   )
 }
