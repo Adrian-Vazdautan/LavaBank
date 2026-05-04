@@ -9,27 +9,22 @@ export function HeroImageBackground() {
 
       <div className={classes.inner}>
         <Title className={classes.title}>
-          Automated AI code reviews for{' '}
-          <Text component="span" inherit className={classes.highlight}>
-            any stack
-          </Text>
+          The simpler, safer way to pay and get <br/>paid.
         </Title>
 
-        <Container size={640}>
-          <Text size="lg" className={classes.description}>
-            Build more reliable software with AI companion. AI is also trained to detect lazy
-            developers who do nothing and just complain on Twitter.
-          </Text>
-        </Container>
-
         <div className={classes.controls}>
-          <Button className={classes.control} variant="white" size="lg">
-            Get started
-          </Button>
-          <Button className={cx(classes.control, classes.secondaryControl)} size="lg">
-            Live demo
+          <Button 
+            size="lg" 
+            radius="xl" 
+            px={150}
+            color="blue" // Подбери нужный оттенок синего
+          >
+            Sign Up for Free
           </Button>
         </div>
+        <Text c="white" mt="30" ta="center" w="100%">
+          Own a business? Open a Business account.
+        </Text>
       </div>
     </div>
   );
