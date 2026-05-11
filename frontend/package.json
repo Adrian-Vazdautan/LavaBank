@@ -15,7 +15,8 @@
     "@mantinex/mantine-logo": "^2.0.0",
     "@tabler/icons-react": "^3.41.1",
     "react": "^19.2.5",
-    "react-dom": "^19.2.5"
+    "react-dom": "^19.2.5",
+    "react-router-dom": "^7.15.0"
   },
   "devDependencies": {
     "@eslint/js": "^10.0.1",

@@ -28,6 +28,7 @@ import {
 import { useDisclosure } from '@mantine/hooks';
 import lavaLogo from '../../assets/LB.svg';
 import classes from './HeaderMegaMenu.module.css';
+import { useNavigate } from 'react-router-dom';
 
 const mockdata = [
   {
@@ -66,6 +67,7 @@ export function HeaderMegaMenu() {
   const [drawerOpened, { toggle: toggleDrawer, close: closeDrawer }] = useDisclosure(false);
   const [linksOpened, { toggle: toggleLinks }] = useDisclosure(false);
   const theme = useMantineTheme();
+  const navigate = useNavigate();
 
   const links = mockdata.map((item) => (
     <UnstyledButton className={classes.subLink} key={item.title}>
@@ -185,7 +187,7 @@ export function HeaderMegaMenu() {
           </Group>
 
           <Group visibleFrom="sm">
-            <Button variant="default" variant="outline" color="#228be6" radius="xl" style={{ borderWidth: '1px' }}>Log in</Button>
+            <Button variant="default" variant="outline" color="#228be6" radius="xl" style={{ borderWidth: '1px' }}  onClick={() => navigate('/login')}>Log in</Button>
             <Button radius="xl">Sign up</Button>
           </Group>
 
@@ -232,7 +234,7 @@ export function HeaderMegaMenu() {
           <Divider my="sm" />
 
           <Group justify="center" grow pb="xl" px="md">
-            <Button variant="default">Log in</Button>
+            <Button variant="default" onClick={() => navigate('/login')}>Log in</Button>
             <Button>Sign up</Button>
           </Group>
         </ScrollArea>
