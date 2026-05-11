@@ -1,6 +1,7 @@
 import { IconCookie, IconGauge, IconUser } from '@tabler/icons-react';
 import {
   Badge,
+  Center,
   Card,
   Box,
   Container,
@@ -14,21 +15,21 @@ import classes from './FeaturesCards.module.css';
 
 const mockdata = [
   {
-    title: 'Extreme performance',
+    title: 'Individuals',
     description:
-      'This dust is actually a powerful poison that will even make a pro wrestler sick, Regice cloaks itself with frigid air of -328 degrees Fahrenheit',
+      'Find out why we have more than 200M active accounts worldwide.',
     icon: IconGauge,
   },
   {
-    title: 'Privacy focused',
+    title: 'Businesses',
     description:
-      'People say it can run at the same speed as lightning striking, Its icy body is so cold, it will not melt even if it is immersed in magma',
+      'Join more than 7 million businesses around the world offering PayPal.',
     icon: IconUser,
   },
   {
-    title: 'No third parties',
+    title: 'Partners and developers',
     description:
-      'They’re popular, but they’re rare. Trainers who show them off recklessly may be targeted by thieves',
+      'Work with PayPal to offer your customers world class payment solutions.',
     icon: IconCookie,
   },
 ];
@@ -37,11 +38,11 @@ export function FeaturesCards() {
   const theme = useMantineTheme();
   const features = mockdata.map((feature) => (
     <Box key={feature.title} padding="xl">
-      <feature.icon size={50} stroke={1.5} color={theme.colors.blue[6]} />
-      <Text fz="lg" fw={500} className={classes.cardTitle} mt="md">
+      <Center><feature.icon size={50} stroke={1.5} color={theme.colors.blue[6]} /></Center>
+      <Text fz="lg" fw={500} mt="md" ta="center">
         {feature.title}
       </Text>
-      <Text fz="sm" c="dimmed" mt="sm">
+      <Text fz="sm" c="dimmed" mt="sm" ta="center">
         {feature.description}
       </Text>
     </Box>
