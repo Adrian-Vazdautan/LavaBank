@@ -188,7 +188,7 @@ export function HeaderMegaMenu() {
 
           <Group visibleFrom="sm">
             <Button variant="default" variant="outline" color="#228be6" radius="xl" style={{ borderWidth: '1px' }}  onClick={() => navigate('/login')}>Log in</Button>
-            <Button radius="xl">Sign up</Button>
+            <Button radius="xl" onClick={() => navigate('/signup')}>Sign up</Button>
           </Group>
 
           <Burger
@@ -235,7 +235,7 @@ export function HeaderMegaMenu() {
 
           <Group justify="center" grow pb="xl" px="md">
             <Button variant="default" onClick={() => navigate('/login')}>Log in</Button>
-            <Button>Sign up</Button>
+            <Button onClick={() => navigate('/signup')}>Sign up</Button>
           </Group>
         </ScrollArea>
       </Drawer>
